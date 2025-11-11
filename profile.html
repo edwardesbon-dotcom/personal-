@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Edward Sam Esbon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+        }
+
+        .profile-header {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        /* Flex layout for the profile container */
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        /* Aligning profile details */
+        .profile-details {
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .profile-details p, .profile-details ul {
+            font-size: 1.1rem;
+        }
+
+        /* Card Style for each section */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Edward Sam Esbon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery.html"></a></li>
+                  <li><a class="dropdown-item" href="profile.html"></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Edward sam esbon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="container profile-container">
+        <!-- Profile Image -->
+        <div class="col-md-3 text-center">
+            <img src="ed.jpg" alt="Edward sam esbon" class="profile-img">
+        </div>
+        
+
+        <!-- Profile Details -->
+        <div class="col-md-8 profile-details">
+            <h2 class="profile-header">Edward sam esbon</h2>
+            <p><strong>Diploma:</strong> Diploma in information Technology</p>
+            <p><strong>University:</strong> Bugema University</p>
+            <p><strong>Certificate:</strong> Certificate in information Technology</p>
+            <p><strong>University:</strong> Kumi University</p>
+            <p><strong>High School:</strong> Francis Ayume Memorial Secondary School (FAMSS)</p>
+
+            <!-- Academic Background Section -->
+            <div class="card">
+                <div class="card-header">
+                    Academic Background
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Diploma in information Technology (Ongoing) - Bugema University</li>
+                        <li>Certificate in information Technology - Kumi University</li>
+                        <li>High school  - Francis Ayume Memorial Secondary School</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="card">
+                <div class="card-header">
+                    Skills
+                </div>
+                <div class="card-body">
+                    <ul><li>Web designer</li>
+                        <li>Photograhy designer</li>
+                        <li>Computer repair and maintainance</li>
+                        <li>Networking Protocols (TCP/IP, DNS, DHCP)</li>
+                        <li>Network Configuration & Troubleshooting</li>
+                        <li>Operating Systems (Windows)</li>
+                        <li>Hardware and Software Integration</li>
+                        <li>Printers operations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Academic and Career Goals Section -->
+            <div class="card">
+                <div class="card-header">
+                    Academic and Career Goals
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Complete my Diploma in information Technology with honor.</li>
+                        <li>Certify in network administration such as CCNA (Cisco Certified Network Associate) and CompTIA Network+.</li>
+                        <li>Gain proficiency in network and information security and earn certifications like CompTIA Security+ and Certified Ethical Hacker (CEH).</li>
+                        <li>Develop expertise in network management and troubleshooting for large-scale systems.</li>
+                        <li>Contribute to academic research in the field of network automation and SDN (Software Defined Networking).</li>
+                        <li>Gain hands-on experience by participating in internships with leading tech companies and network service providers.</li>
+                        <li>Participate in industry events, seminars, and workshops to stay updated with the latest trends in networking technology.</li>
+                        <li>Work towards a Master's Degree in Network Engineering or Cybersecurity after completing my Bachelor's Degree.</li>
+                        <li>Become a network architect or systems engineer for a global technology company.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
